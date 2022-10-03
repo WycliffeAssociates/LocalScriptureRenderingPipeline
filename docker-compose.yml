@@ -11,7 +11,7 @@ services:
   pipeline:
     depends_on:
       - azurite
-    image: wycliffeassociates/scripturerenderingpipeline
+    image: wycliffeassociates/scripturerenderingpipeline:dan-mp-build
     ports:
       - 8080:80
     environment:
