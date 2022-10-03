@@ -11,7 +11,9 @@ services:
   pipeline:
     depends_on:
       - azurite
-    image: wycliffeassociates/scripturerenderingpipeline
+    build:
+      context: ../ScriptureRenderingPipeline
+      dockerfile: ScriptureRenderingPipeline/Dockerfile
     ports:
       - 8080:80
     environment:
