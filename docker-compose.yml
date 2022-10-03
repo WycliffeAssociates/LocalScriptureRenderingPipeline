@@ -23,7 +23,9 @@ services:
   web:
     depends_on:
       - azurite
-    image: wycliffeassociates/azurestaticsitehoster
+    build:
+      context: ../AzureStaticSiteHoster
+      dockerfile: AzureStaticSiteHoster/Dockerfile
     ports:
       - 80:80
     environment:
