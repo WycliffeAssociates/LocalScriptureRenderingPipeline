@@ -15,7 +15,7 @@ services:
       context: ../ScriptureRenderingPipeline
       dockerfile: ScriptureRenderingPipeline/Dockerfile
     ports:
-      - 8080:80
+      - 8080:7071
     environment:
       - ASPNETCORE_hostBuilder__reloadConfigOnChange=false
       - ScripturePipelineStorageConnectionString=DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://azurite:10000/devstoreaccount1;QueueEndpoint=http://azurite:10001/devstoreaccount1;TableEndpoint=http://azurite:10002/devstoreaccount1;
